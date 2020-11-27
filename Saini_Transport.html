@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 30px;
+  height: 763px;
+  text-align: center;
+  border:15px solid  #1d2cea66;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  background-image: url('bus.png');
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size:  26px;
+  background-color: #310d3e;
+  text-align: center;
+  color:solid black ;
+  border-radius: 20px;
+}
+
+.header h2 {
+  font-size:  18px;
+  background-color: #7689f3;
+  text-align: center;
+  color:solid black ;
+  border-radius: 20px;
+}
+
+.header h3 {
+  font-size:  18px;
+  background-color: #310d3e;
+  text-align: center;
+  color:solid black ;
+  border-radius: 20px;
+
+}
+.header p{
+  font-size:  21px;
+  background-color: #7689f3;
+  text-align: center;
+  color:solid black ;
+  border-radius: 20px;
+}
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.con{
+  color:white;
+}
+.con a.right {
+  float: right;
+}
+
+/* Change color on hover */
+/* .con a:hover {
+  background-color: #ddd;
+  color: rgb(35, 243, 53);
+} */
+
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f26011;
+  color: white;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  padding: 20px;
+  background-color: #e5da59;
+  
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  
+}
+.fake {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  background-image: url(me.jpg);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
+  background-size: 100% 100%;
+  border-radius: 100px;
+}
+
+
+.a1 {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  background-image: url(bus.png);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
+  background-size: 100% 100%;
+  border-radius: 100px;
+}
+.a2 {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  background-image: url(truck.png);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
+  background-size: 100% 100%;
+  border-radius: 100px;
+}
+
+.a3 {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  background-image: url(car1.png);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
+  background-size: 100% 100%;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+
+.f {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  background-image: url(me1.jpg);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
+  background-size: 100% 100%;
+  border-radius: 50px;
+}
+
+.f1 {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  background-image: url(me2.jpg);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
+  background-size: 100% 100%;
+  border-radius: 50px;
+}
+/* Footer */
+.footer {
+  padding: 9px;
+  text-align: center;
+  background: rgb(146, 16, 16);
+  color: white;
+  font-size: 13px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Saini Transport </h1>
+  <p >Fully safely transportation available here (All India Service)</p>
+  <h3>All Types of vehicles are available here(Car,Tempo,Chota Hathi,Eicher,Truck etc) </h3>
+  <h2 >Contact No. = <a href= "tel:+919716980926" ,class="con"> 9716980926</a> </h2>
+</div>
+
+<div class="navbar">
+  <a href="truck.png">Truck</a>
+  <a href="1.jpg">Eicher truck</a>
+  <a href="car.png">Car</a>
+  <a href="travel.png">Tourist(tempo traveller)</a>
+  <a href="bus.png">Tourist(Bus)</a>
+  <a href="4.png">Chota Hathi </a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me :</h2>
+    <h1>25 years of Experience of Transportation</h1>
+    <div class="fake" style="height:800px;">
+   <!--  <a href="me.jpg"> Image</a> -->
+     </div>
+     <p>Hello friends,</p>
+    <p>My name is Mehtab Singh (founder of Saini Transport).</p>
+    <p> We have completed 25 years of experience of transportation . We safely transport your products.Any kind of vehicles are available here for example- car , truck , chota hathi , traveller bus , tourism vehicle etc...contact us for any kind of transportation (All Over India), contact no. - 9716980926 </p>
+    <p>Thank You</p>
+    <p>Name = Mehtab Singh</p>
+    <p>Address = Delhi</p>
+   <p class="con">Contact No. = <a href= "tel:+919716980926" </a>9716980926</a></p>
+
+  
+  </div>
+  <div class="main">
+    <h2>परिवहन क्षेत्र का 25 वर्ष का अनुभव</h2>
+    <h5></h5>
+    <div class="f" style="height:400px;">
+      
+    </div>
+    <p>नमस्कार दोस्तों,</p>
+    <p>मेरा नाम मेहताब सिंह है|(सैनी ट्रांसपोर्ट के संस्थापक) </p>
+  </p>हमने परिवहन के 25 वर्षों के अनुभव को पूरा कर लिया है।  हम आपको हमारे काम की पूरी सुरक्षा प्रदान करते हैं। किसी भी प्रकार के वाहन यहाँ उपलब्ध हैं, उदाहरण के लिए- कार, ट्रक, छोटा हाथी, यात्री बस, पर्यटन वाहन आदि ...,पूरे भारत में ,किसी भी तरह के परिवहन के लिए हमसे संपर्क करें,संपर्क नंबर = <a href= "tel:+919716980926"  </a>9716980926</a> </p>
+    
+    <p> धन्यवाद</p>
+    <p> नाम = मेहताब सिंह </p>
+    <p>  स्थान = दिल्ली</p> 
+    <p>संपर्क नंबर = <a href= "tel:+919716980926" </a>9716980926</a></p>
+  
+    <br>
+    <div class="a1" style="height:400px;"></div><br>
+    <div class="a2" style="height:400px;"></div><br>
+    <div class="a3" style="height:400px;"></div>
+   <!--- <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5> -->
+    <div class="f1" style="height:400px;"></div>
+       
+
+
+        </div>
+</div>
+
+<div class="footer">
+  <h1>Thank you for visiting !...<a href="smile.gip"></a><p>&#128512; </p></h1>
+  <p class="con">Contact No. = <a href= "tel:+919716980926" </a>9716980926</a></p>
+</div>
+
+</body>
+</html>
